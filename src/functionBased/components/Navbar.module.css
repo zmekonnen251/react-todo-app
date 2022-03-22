@@ -1,0 +1,29 @@
+.navBar ul {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navBar li {
+  list-style: none;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.4rem;
+}
+.navBar li a {
+  text-decoration: none;
+  color: rgb(6, 34, 24);
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 0 solid #525252;
+  height: 100vh;
+  background-color: #e6e6e6;
+  box-shadow: 1px 10px 7px 2px rgb(54, 51, 51);
+}

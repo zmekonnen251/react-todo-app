@@ -1,0 +1,8 @@
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 12rem;
+}
