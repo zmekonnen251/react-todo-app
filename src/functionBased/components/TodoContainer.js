@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
+
 import Header from './Header';
 import InputTodo from './InputTodo';
 import TodosList from './TodosList';
 import { v4 as uuidv4 } from 'uuid';
 
 const TodoContainer = () => {
-  const [todos, setTodos] = useState([]);
+  const getInitialTodos = () => {
+    // getting stored items
+    const temp = localStorage.getItem('todos');
+    const savedTodos = JSON.parse(temp);
+    return savedTodos || [];
+  };
+
+  const [todos, setTodos] = useState(getInitialTodos());
 
   const handleChange = (id) => {
     setTodos((prevState) =>
@@ -50,8 +58,19 @@ const TodoContainer = () => {
   };
 
   useEffect(() => {
-    console.log('test run');
-  });
+    const temp = localStorage.getItem('todos');
+    const loadedTodos = JSON.parse(temp);
+
+    if (loadedTodos) {
+      setTodos(loadedTodos);
+    }
+  }, [setTodos]);
+
+  useEffect(() => {
+    // storing todos items
+    const temp = JSON.stringify(todos);
+    localStorage.setItem('todos', temp);
+  }, [todos]);
 
   return (
     <div className="container">

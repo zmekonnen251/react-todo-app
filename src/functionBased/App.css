@@ -17,8 +17,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+
   margin: 0 auto;
+  width: 65vw;
 }
 
 .inner {
@@ -62,4 +63,15 @@ body {
   height: 45px;
   outline: none;
   border: none;
+}
+
+.input-submit svg {
+  color: darkcyan;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
 }

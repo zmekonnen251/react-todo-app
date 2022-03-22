@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './TodoItem.module.css';
+import { FaTrash } from 'react-icons/fa';
 
 const TodoItem = (props) => {
   const [editing, setEditing] = useState(false);
@@ -32,6 +33,12 @@ const TodoItem = (props) => {
     editMode.display = 'none';
   }
 
+  useEffect(() => {
+    return () => {
+      console.log('Cleaning up...');
+    };
+  }, []);
+
   return (
     <li className={styles.item}>
       <div onDoubleClick={handleEditing}>
@@ -42,7 +49,9 @@ const TodoItem = (props) => {
           checked={completed}
           onChange={() => props.handleChangeProps(id)}
         />
-        <button onClick={() => props.deleteTodoProps(id)}>Delete</button>
+        <button onClick={() => props.deleteTodoProps(id)}>
+          <FaTrash color="red" size="20px" className="submit-icon" />
+        </button>
         <span style={completed ? completedStyle : null}>{title}</span>
       </div>
       <input
