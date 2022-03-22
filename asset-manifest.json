@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zmekonnen251/react-todo-app/tree/to-do-react-tutorial/static/css/main.d46c6eee.css",
+    "main.js": "/zmekonnen251/react-todo-app/tree/to-do-react-tutorial/static/js/main.1f433708.js",
+    "index.html": "/zmekonnen251/react-todo-app/tree/to-do-react-tutorial/index.html",
+    "main.d46c6eee.css.map": "/zmekonnen251/react-todo-app/tree/to-do-react-tutorial/static/css/main.d46c6eee.css.map",
+    "main.1f433708.js.map": "/zmekonnen251/react-todo-app/tree/to-do-react-tutorial/static/js/main.1f433708.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d46c6eee.css",
+    "static/js/main.1f433708.js"
+  ]
+}
