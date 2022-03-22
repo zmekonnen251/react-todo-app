@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do list App - React.js: list structure
+# To Do list App - React.js
 
 > In this project, I build a simple To Do list App using React.js. The list is styled according to the minimalist project. This simple web page is built using React and CSS and served by a webpack dev server.
 
