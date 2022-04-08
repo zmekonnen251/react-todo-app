@@ -1,7 +1,12 @@
 import React from 'react';
-import styles from './About.module.css';
+import '../App.css';
 
 const About = () => {
-  return <div class={styles.aboutText}>Hello from about page</div>;
+  return (
+    <div className="about__content">
+      <ul className="about__list">...</ul>
+      ...
+    </div>
+  );
 };
 export default About;
